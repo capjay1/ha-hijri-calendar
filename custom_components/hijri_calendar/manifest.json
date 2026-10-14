@@ -1,0 +1,13 @@
+{
+  "domain": "hijri_calendar",
+  "name": "Hijri Calendar (Umm al-Qura)",
+  "codeowners": ["@YOUR_GITHUB_HANDLE"],
+  "config_flow": true,
+  "documentation": "https://github.com/YOUR_GITHUB_HANDLE/ha-hijri-calendar",
+  "integration_type": "service",
+  "iot_class": "calculated",
+  "issue_tracker": "https://github.com/YOUR_GITHUB_HANDLE/ha-hijri-calendar/issues",
+  "requirements": ["hijridate==2.6.0"],
+  "single_config_entry": true,
+  "version": "1.0.0"
+}

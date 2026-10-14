@@ -1,0 +1,53 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "التقويم الهجري",
+        "description": "يضيف مستشعرات التاريخ الهجري وفق تقويم أم القرى. لا يحتاج إلى حساب ولا إلى اتصال بالإنترنت."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "تمت الإضافة مسبقًا. يُسمح بنسخة واحدة فقط."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "خيارات التقويم الهجري",
+        "data": {
+          "day_offset": "إزاحة الأيام"
+        },
+        "data_description": {
+          "day_offset": "تعديل التاريخ الهجري بعدد الأيام المحدد. استخدم +1 إذا كنت تفضل تغيّر التاريخ عند المغرب، أو لمطابقة إعلان الرؤية المحلية عند اختلافه عن تقويم أم القرى."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "hijri_date": { "name": "التاريخ" },
+      "hijri_day": { "name": "اليوم" },
+      "hijri_year": { "name": "السنة" },
+      "hijri_month": {
+        "name": "الشهر",
+        "state": {
+          "muharram": "محرم",
+          "safar": "صفر",
+          "rabi_al_awwal": "ربيع الأول",
+          "rabi_al_thani": "ربيع الآخر",
+          "jumada_al_ula": "جمادى الأولى",
+          "jumada_al_akhirah": "جمادى الآخرة",
+          "rajab": "رجب",
+          "shaban": "شعبان",
+          "ramadan": "رمضان",
+          "shawwal": "شوال",
+          "dhu_al_qadah": "ذو القعدة",
+          "dhu_al_hijjah": "ذو الحجة"
+        }
+      }
+    },
+    "binary_sensor": {
+      "ramadan": { "name": "رمضان" }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Hijri Calendar",
+        "description": "Adds Umm al-Qura Hijri date sensors. No account or network access is needed."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Already configured. Only a single instance is possible."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Hijri Calendar options",
+        "data": {
+          "day_offset": "Day offset"
+        },
+        "data_description": {
+          "day_offset": "Shift the Hijri date by this many days. Use +1 if you prefer the date to roll over at sunset, or to match a local sighting announcement that differs from Umm al-Qura."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "hijri_date": { "name": "Date" },
+      "hijri_day": { "name": "Day" },
+      "hijri_year": { "name": "Year" },
+      "hijri_month": {
+        "name": "Month",
+        "state": {
+          "muharram": "Muharram",
+          "safar": "Safar",
+          "rabi_al_awwal": "Rabi' al-Awwal",
+          "rabi_al_thani": "Rabi' al-Thani",
+          "jumada_al_ula": "Jumada al-Ula",
+          "jumada_al_akhirah": "Jumada al-Akhirah",
+          "rajab": "Rajab",
+          "shaban": "Sha'ban",
+          "ramadan": "Ramadan",
+          "shawwal": "Shawwal",
+          "dhu_al_qadah": "Dhu al-Qa'dah",
+          "dhu_al_hijjah": "Dhu al-Hijjah"
+        }
+      }
+    },
+    "binary_sensor": {
+      "ramadan": { "name": "Ramadan" }
+    }
+  }
+}

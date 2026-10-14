@@ -1,0 +1,16 @@
+{
+  "entity": {
+    "sensor": {
+      "hijri_date": { "default": "mdi:calendar-star-four-points" },
+      "hijri_day": { "default": "mdi:calendar-today" },
+      "hijri_month": { "default": "mdi:calendar-month" },
+      "hijri_year": { "default": "mdi:calendar-blank" }
+    },
+    "binary_sensor": {
+      "ramadan": {
+        "default": "mdi:moon-waning-crescent",
+        "state": { "on": "mdi:star-crescent" }
+      }
+    }
+  }
+}
