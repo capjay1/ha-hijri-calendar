@@ -18,7 +18,7 @@ Umm al-Qura tables. Fully offline — no API, no account, no network access.
 ### HACS (custom repository)
 
 1. HACS → three-dot menu → **Custom repositories**
-2. Add `https://github.com/YOUR_GITHUB_HANDLE/ha-hijri-calendar`, category **Integration**
+2. Add `https://github.com/capjay1/ha-hijri-calendar`, category **Integration**
 3. Install, restart Home Assistant
 4. Settings → Devices & Services → **Add Integration** → *Hijri Calendar*
 
